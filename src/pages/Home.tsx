@@ -1,4 +1,5 @@
 import Hero from "@/components/home/Hero";
+import Offer from "@/components/home/Offer";
 import Showcase from "@/components/home/Showcase";
 
 const Home = () => {
@@ -11,6 +12,7 @@ const Home = () => {
       <Showcase />
 
       {/*TODO: Offer */}
+      <Offer />
 
       {/*TODO: InspirationIdeas */}
 
