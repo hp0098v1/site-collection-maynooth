@@ -1,5 +1,9 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+
 import Home from "@/pages/Home";
 import Product from "@/pages/Product";
 import Category from "@/pages/Category";

@@ -10,6 +10,12 @@ export const FOOTER_SOCIAL_ICONS = [
   { id: 1, alt: "facebook", src: "/assets/icons/facebook-light.png" },
 ];
 
+export const HERO_SOCIAL_ICONS = [
+  { id: 3, alt: "pinterest", src: "/assets/icons/pinterest.png" },
+  { id: 2, alt: "instagram", src: "/assets/icons/instagram.png" },
+  { id: 1, alt: "facebook", src: "/assets/icons/facebook.png" },
+];
+
 export const FOOTER_LINKS = {
   information: {
     title: "اطلاعات",

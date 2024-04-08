@@ -66,7 +66,7 @@ const FooterLinks = ({ className, title, links }: Props) => {
       <p className="text-sm sm:text-base font-bold text-center w-full mb-4">
         {title}
       </p>
-      <div className="space-y-1">
+      <div className="space-y-2">
         {links.map((link) => (
           <p
             className="text-xs sm:text-sm text-center w-full"
