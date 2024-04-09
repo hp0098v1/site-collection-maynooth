@@ -10,36 +10,38 @@ const Inspirations = () => {
         لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم لورم ایپسوم متن ساختگی با
         تولید سادگ
       </p>
-      <Inspiration
-        title=" میز های ترند"
-        description="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم لورم ایپسوم متن ساختگی با تولید سادگ"
-        category="هال"
-        imageUrl="/assets/images/home/inspirarion-ideas/living-room.png"
-        imageAlt="Living room"
-      />
-      <Inspiration
-        title="تخت خواب های ترند"
-        description="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم لورم ایپسوم متن ساختگی با تولید سادگ"
-        category="اتاق خواب"
-        imageUrl="/assets/images/home/inspirarion-ideas/bed-room.png"
-        imageAlt="Bedroom"
-        isReverse={true}
-      />
-      <Inspiration
-        title="بهترین میز های ناهارخوری"
-        description="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم لورم ایپسوم متن ساختگی با تولید سادگ"
-        category="سالن پذیرایی"
-        imageUrl="/assets/images/home/inspirarion-ideas/dining.png"
-        imageAlt="Dining"
-      />
-      <Inspiration
-        title="لوازم محبوب آشپزخانه"
-        description="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم لورم ایپسوم متن ساختگی با تولید سادگ"
-        category="آشپزخانه"
-        imageUrl="/assets/images/home/inspirarion-ideas/kitchen.png"
-        imageAlt="Kitchen"
-        isReverse={true}
-      />
+      <div className="max-md:space-y-8">
+        <Inspiration
+          title=" میز های ترند"
+          description="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم لورم ایپسوم متن ساختگی با تولید سادگ"
+          category="هال"
+          imageUrl="/assets/images/home/inspirarion-ideas/living-room.png"
+          imageAlt="Living room"
+        />
+        <Inspiration
+          title="تخت خواب های ترند"
+          description="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم لورم ایپسوم متن ساختگی با تولید سادگ"
+          category="اتاق خواب"
+          imageUrl="/assets/images/home/inspirarion-ideas/bed-room.png"
+          imageAlt="Bedroom"
+          isReverse={true}
+        />
+        <Inspiration
+          title="بهترین میز های ناهارخوری"
+          description="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم لورم ایپسوم متن ساختگی با تولید سادگ"
+          category="سالن پذیرایی"
+          imageUrl="/assets/images/home/inspirarion-ideas/dining.png"
+          imageAlt="Dining"
+        />
+        <Inspiration
+          title="لوازم محبوب آشپزخانه"
+          description="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم لورم ایپسوم متن ساختگی با تولید سادگ"
+          category="آشپزخانه"
+          imageUrl="/assets/images/home/inspirarion-ideas/kitchen.png"
+          imageAlt="Kitchen"
+          isReverse={true}
+        />
+      </div>
     </div>
   );
 };

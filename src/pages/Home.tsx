@@ -21,7 +21,7 @@ const Home = () => {
       <Inspirations />
 
       {/*TODO: Summer Sale */}
-      {/* <SummerSale /> */}
+      <SummerSale />
 
       {/*TODO: Subscription */}
       <Subscription />

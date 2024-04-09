@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 
 const Subscription = () => {
   return (
-    <div className="relative flex justify-center items-center my-20 bg-[url('/assets/images/home/subscribe-image.png')] bg-center bg-no-repeat min-h-[500px]">
+    <div className="relative container flex justify-center items-center my-20 bg-[url('/assets/images/home/subscribe-image.png')] bg-center bg-no-repeat min-h-[500px]">
       <div className="absolute inset-0 size-full bg-white/50"></div>
       <div className="relative z-10 flex flex-col justify-center items-center text-center max-w-xl">
         <h2 className="self-center text-3xl font-medium ">تخفیف 30 درصدی</h2>

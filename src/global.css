@@ -161,7 +161,7 @@
   background-color: transparent !important;
 }
 
-.swiper-pagination-bullet-active::after {
+/* .swiper-pagination-bullet-active::after {
   content: "";
   background: #000;
   position: absolute;
@@ -169,4 +169,4 @@
   right: -4px;
   height: 90%;
   width: 2px;
-}
+} */
