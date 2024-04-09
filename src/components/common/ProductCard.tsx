@@ -1,13 +1,21 @@
 type Props = {
+  imageContaineeClassName?: string;
   imageUrl: string;
   title: string;
   price: number;
 };
 
-const ProductCard = ({ imageUrl, title, price }: Props) => {
+const ProductCard = ({
+  imageContaineeClassName,
+  imageUrl,
+  title,
+  price,
+}: Props) => {
   return (
     <div>
-      <div className="relative h-[230px] lg:h-[400px] bg-border">
+      <div
+        className={`relative h-[230px] lg:h-[400px] bg-border ${imageContaineeClassName}`}
+      >
         <img
           className="w-full h-full object-cover"
           loading="lazy"
