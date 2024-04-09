@@ -1,6 +1,7 @@
 import Hero from "@/components/home/Hero";
-import Offer from "@/components/home/Offer";
 import Showcase from "@/components/home/Showcase";
+import Offer from "@/components/home/Offer";
+import Inspirations from "@/components/home/Inspirations";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <Offer />
 
       {/*TODO: InspirationIdeas */}
+      <Inspirations />
 
       {/*TODO: Summer Sale */}
 
