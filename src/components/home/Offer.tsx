@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 const Offer = () => {
   return (
-    <div className="hidden md:block bg-hero-background mt-8">
+    <section className="hidden md:block bg-hero-background mt-8">
       <div className="container grid grid-cols-2 py-8">
         <div>
           <h2 className="text-2xl md:text-4xl font-bold">محصولی جذاب</h2>
@@ -35,7 +35,7 @@ const Offer = () => {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -8,22 +8,16 @@ import Subscription from "@/components/home/Subscription";
 const Home = () => {
   return (
     <>
-      {/*TODO: Hero */}
       <Hero />
 
-      {/*TODO: Showcase */}
       <Showcase />
 
-      {/*TODO: Offer */}
       <Offer />
 
-      {/*TODO: InspirationIdeas */}
       <Inspirations />
 
-      {/*TODO: Summer Sale */}
       <SummerSale />
 
-      {/*TODO: Subscription */}
       <Subscription />
     </>
   );

@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 
 const Inspirations = () => {
   return (
-    <div className="container mt-8">
+    <section className="container mt-8">
       <h2 className="text-2xl md:text-4xl font-bold text-center">
         ایده های الهام بخش
       </h2>
@@ -42,7 +42,7 @@ const Inspirations = () => {
           isReverse={true}
         />
       </div>
-    </div>
+    </section>
   );
 };
 

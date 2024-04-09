@@ -10,7 +10,7 @@ const SummerSale = () => {
   const nextRef = useRef(null);
 
   return (
-    <div className="container px-0">
+    <section className="container px-0">
       <div className="grid grid-cols-1 sm:grid-cols-2 justify-center items-center w-full sm:w-[90%] ">
         <div className="flex flex-col gap-4 justify-center items-center w-full min-h-[300px]  h-full bg-[url('/assets/images/home/summer-sale/summer-sale-bg.png')] bg-no-repeat bg-center">
           <h2 className="self-center text-3xl font-medium ">فروش تابستانه</h2>
@@ -59,7 +59,7 @@ const SummerSale = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

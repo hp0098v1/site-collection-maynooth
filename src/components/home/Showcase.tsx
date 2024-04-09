@@ -6,7 +6,7 @@ import { NEW_IN_PRODUCTS } from "@/constants";
 
 const Showcase = () => {
   return (
-    <div className="container mt-8">
+    <section className="container mt-8">
       <h2 className="text-2xl md:text-4xl font-bold text-center">محصولات</h2>
       <p className="text-xs md:text-sm text-center line-clamp-2 w-[200px] mx-auto mt-2">
         لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم لورم ایپسوم متن ساختگی با
@@ -31,7 +31,7 @@ const Showcase = () => {
           رفتن به خرید
         </Button>
       </div>
-    </div>
+    </section>
   );
 };
 

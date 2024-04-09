@@ -19,9 +19,8 @@ const Hero = () => {
   };
 
   return (
-    <div className="bg-hero-background w-[95%] rounded-tl-2xl mt-4">
+    <section className="bg-hero-background w-[95%] rounded-tl-2xl mt-4">
       <div className="container py-8 grid grid-cols-1 gap-8 sm:grid-cols-2">
-        {/* TODO: Description */}
         <div className="flex flex-col items-center justify-center sm:items-start lg:justify-between lg:py-40">
           <div>
             <p className="text-lg sm:text-2xl lg:text-3xl text-center sm:text-start mb-2 sm:mb-4">
@@ -50,7 +49,6 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* TODO: Image */}
         <div className="w-full h-[250px] lg:h-[630px]">
           <Swiper
             direction={"vertical"}
@@ -92,7 +90,7 @@ const Hero = () => {
           </Swiper>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
