@@ -1,5 +1,11 @@
+import Hero from "@/components/category/Hero";
+
 const Category = () => {
-  return <div>Category</div>;
+  return (
+    <>
+      <Hero />
+    </>
+  );
 };
 
 export default Category;
