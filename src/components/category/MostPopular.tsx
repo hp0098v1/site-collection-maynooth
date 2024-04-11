@@ -2,6 +2,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 import { useRef } from "react";
 import ProductCard from "@/components/common/ProductCard";
+import { MOST_POPULAR_PRODUCTS } from "@/constants";
 
 const MostPopular = () => {
   return (
@@ -31,7 +32,6 @@ const MostPopularSlider = () => {
         style={{ direction: "rtl" }}
         slidesPerView={2}
         breakpoints={{
-          // 440: { slidesPerView: 2 },
           660: { slidesPerView: 3 },
           800: { slidesPerView: 4 },
         }}
@@ -42,70 +42,17 @@ const MostPopularSlider = () => {
         }}
         modules={[Pagination, Navigation]}
       >
-        <SwiperSlide>
-          <ProductCard
-            imageContaineeClassName="h-[185px] md:h-[220px] lg:h-[300px]"
-            title="bla bla"
-            price={200}
-            imageUrl="/assets/images/category/most-popular/product-1.png"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ProductCard
-            imageContaineeClassName="h-[185px] md:h-[220px] lg:h-[300px]"
-            title="bla bla"
-            price={200}
-            imageUrl="/assets/images/category/most-popular/product-2.png"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ProductCard
-            imageContaineeClassName="h-[185px] md:h-[220px] lg:h-[300px]"
-            title="bla bla"
-            price={200}
-            imageUrl="/assets/images/category/most-popular/product-3.png"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ProductCard
-            imageContaineeClassName="h-[185px] md:h-[220px] lg:h-[300px]"
-            title="bla bla"
-            price={200}
-            imageUrl="/assets/images/category/most-popular/product-4.png"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ProductCard
-            imageContaineeClassName="h-[185px] md:h-[220px] lg:h-[300px]"
-            title="bla bla"
-            price={200}
-            imageUrl="/assets/images/category/most-popular/product-1.png"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ProductCard
-            imageContaineeClassName="h-[185px] md:h-[220px] lg:h-[300px]"
-            title="bla bla"
-            price={200}
-            imageUrl="/assets/images/category/most-popular/product-2.png"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ProductCard
-            imageContaineeClassName="h-[185px] md:h-[220px] lg:h-[300px]"
-            title="bla bla"
-            price={200}
-            imageUrl="/assets/images/category/most-popular/product-3.png"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ProductCard
-            imageContaineeClassName="h-[185px] md:h-[220px] lg:h-[300px]"
-            title="bla bla"
-            price={200}
-            imageUrl="/assets/images/category/most-popular/product-4.png"
-          />
-        </SwiperSlide>
+        {MOST_POPULAR_PRODUCTS.map((product) => (
+          <SwiperSlide>
+            <ProductCard
+              key={`most-popular-products-${product.id}`}
+              imageContainerClassName="h-[185px] md:h-[220px] lg:h-[280px] xl:h-[340px]"
+              title={product.title}
+              price={product.price}
+              imageUrl={product.imageUrl}
+            />
+          </SwiperSlide>
+        ))}
       </Swiper>
       <div className="absolute -top-8 right-4 flex items-center gap-1">
         <button ref={prevRef}>

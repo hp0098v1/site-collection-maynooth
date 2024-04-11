@@ -6,9 +6,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Button } from "@/components/ui/button";
 
 const SummerSale = () => {
-  const prevRef = useRef(null);
-  const nextRef = useRef(null);
-
   return (
     <section className="container px-0">
       <div className="grid grid-cols-1 sm:grid-cols-2 justify-center items-center w-full sm:w-[90%] ">
@@ -21,45 +18,54 @@ const SummerSale = () => {
             مشاهده محصولات
           </Button>
         </div>
-        <div className="relative size-full">
-          <Swiper
-            style={{ direction: "rtl" }}
-            slidesPerView={1}
-            breakpoints={{
-              640: { slidesPerView: 2 },
-            }}
-            pagination={{ clickable: true }}
-            navigation={{
-              prevEl: prevRef.current,
-              nextEl: nextRef.current,
-            }}
-            modules={[Pagination, Navigation]}
-          >
-            <SwiperSlide>
-              <SummerSaleCard />
-            </SwiperSlide>
-            <SwiperSlide>
-              <SummerSaleCard />
-            </SwiperSlide>
-            <SwiperSlide>
-              <SummerSaleCard />
-            </SwiperSlide>
-            <SwiperSlide>
-              <SummerSaleCard />
-            </SwiperSlide>
-          </Swiper>
-          <div className="absolute -bottom-12 left-14 sm:left-8 flex justify-end items-center gap-1 w-[90%]">
-            <button ref={prevRef}>
-              <img src="/assets/icons/arrow-right.svg" alt="Arrow Right" />
-            </button>
-            <span>|</span>
-            <button ref={nextRef}>
-              <img src="/assets/icons/arrow-left.svg" alt="Arrow Left" />
-            </button>
-          </div>
-        </div>
+        <SummerSaleSwiper />
       </div>
     </section>
+  );
+};
+
+const SummerSaleSwiper = () => {
+  const prevRef = useRef(null);
+  const nextRef = useRef(null);
+
+  return (
+    <div className="relative size-full">
+      <Swiper
+        style={{ direction: "rtl" }}
+        slidesPerView={1}
+        breakpoints={{
+          640: { slidesPerView: 2 },
+        }}
+        pagination={{ clickable: true }}
+        navigation={{
+          prevEl: prevRef.current,
+          nextEl: nextRef.current,
+        }}
+        modules={[Pagination, Navigation]}
+      >
+        <SwiperSlide>
+          <SummerSaleCard />
+        </SwiperSlide>
+        <SwiperSlide>
+          <SummerSaleCard />
+        </SwiperSlide>
+        <SwiperSlide>
+          <SummerSaleCard />
+        </SwiperSlide>
+        <SwiperSlide>
+          <SummerSaleCard />
+        </SwiperSlide>
+      </Swiper>
+      <div className="absolute -bottom-12 left-14 sm:left-8 flex justify-end items-center gap-1 w-[90%]">
+        <button ref={prevRef}>
+          <img src="/assets/icons/arrow-right.svg" alt="Arrow Right" />
+        </button>
+        <span>|</span>
+        <button ref={nextRef}>
+          <img src="/assets/icons/arrow-left.svg" alt="Arrow Left" />
+        </button>
+      </div>
+    </div>
   );
 };
 

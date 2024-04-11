@@ -103,3 +103,117 @@ export const NEW_IN_PRODUCTS = [
     imageUrl: "/assets/images/home/new-in/product-8.png",
   },
 ];
+
+export const MOST_POPULAR_PRODUCTS = [
+  {
+    id: 1,
+    title: "محصول 1",
+    price: 200,
+    imageUrl: "/assets/images/category/most-popular/product-1.png",
+  },
+  {
+    id: 2,
+    title: "محصول 2",
+    price: 300,
+    imageUrl: "/assets/images/category/most-popular/product-2.png",
+  },
+  {
+    id: 3,
+    title: "محصول 3",
+    price: 200,
+    imageUrl: "/assets/images/category/most-popular/product-3.png",
+  },
+  {
+    id: 4,
+    title: "محصول 4",
+    price: 300,
+    imageUrl: "/assets/images/category/most-popular/product-4.png",
+  },
+  {
+    id: 5,
+    title: "محصول 5",
+    price: 200,
+    imageUrl: "/assets/images/category/most-popular/product-1.png",
+  },
+  {
+    id: 6,
+    title: "محصول 6",
+    price: 300,
+    imageUrl: "/assets/images/category/most-popular/product-2.png",
+  },
+  {
+    id: 7,
+    title: "محصول 7",
+    price: 200,
+    imageUrl: "/assets/images/category/most-popular/product-3.png",
+  },
+  {
+    id: 8,
+    title: "محصول 8",
+    price: 300,
+    imageUrl: "/assets/images/category/most-popular/product-4.png",
+  },
+];
+
+export const CATEGORY_PRODUCTS = [
+  {
+    id: 1,
+    title: "محصول 1",
+    price: 200,
+    imageUrl: "/assets/images/category/products/product-1.png",
+    badge: "جدید",
+  },
+  {
+    id: 2,
+    title: "محصول 2",
+    price: 250,
+    imageUrl: "/assets/images/category/products/product-2.png",
+  },
+  {
+    id: 3,
+    title: "محصول 3",
+    price: 200,
+    imageUrl: "/assets/images/category/products/product-3.png",
+    badge: "جدید",
+  },
+  {
+    id: 4,
+    title: "محصول 4",
+    price: 300,
+    imageUrl: "/assets/images/category/products/product-4.png",
+  },
+  {
+    id: 5,
+    title: "محصول 5",
+    price: 200,
+    imageUrl: "/assets/images/category/products/product-5.png",
+    badge: "30 %",
+  },
+  {
+    id: 6,
+    title: "محصول 6",
+    price: 250,
+    imageUrl: "/assets/images/category/products/product-6.png",
+    badge: "جدید",
+  },
+  {
+    id: 7,
+    title: "محصول 7",
+    price: 200,
+    imageUrl: "/assets/images/category/products/product-7.png",
+  },
+  {
+    id: 8,
+    title: "محصول 8",
+    price: 300,
+    imageUrl: "/assets/images/category/products/product-8.png",
+  },
+  {
+    id: 9,
+    title: "محصول 9",
+    price: 300,
+    imageUrl: "/assets/images/category/products/product-9.png",
+  },
+];
+
+export type Product = (typeof CATEGORY_PRODUCTS)[0];
