@@ -216,4 +216,27 @@ export const CATEGORY_PRODUCTS = [
   },
 ];
 
+export const CATEGORIES = [
+  {
+    id: 1,
+    title: "هال",
+    imageUrl: "/assets/images/category/categories/living-room.png",
+  },
+  {
+    id: 2,
+    title: "اتاق خواب",
+    imageUrl: "/assets/images/category/categories/bed-room.png",
+  },
+  {
+    id: 3,
+    title: "آشپزخانه",
+    imageUrl: "/assets/images/category/categories/kitchen.png",
+  },
+  {
+    id: 4,
+    title: "سالن پذیرایی",
+    imageUrl: "/assets/images/category/categories/dining.png",
+  },
+];
+
 export type Product = (typeof CATEGORY_PRODUCTS)[0];
