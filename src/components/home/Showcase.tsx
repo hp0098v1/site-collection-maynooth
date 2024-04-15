@@ -1,3 +1,5 @@
+import { useNavigate } from "react-router-dom";
+
 import { Button } from "@/components/ui/button";
 import Appliances from "@/components/common/Appliances";
 import ProductCard from "@/components/common/ProductCard";
@@ -5,6 +7,10 @@ import ProductCard from "@/components/common/ProductCard";
 import { NEW_IN_PRODUCTS } from "@/constants";
 
 const Showcase = () => {
+  const navigate = useNavigate();
+
+  const navigateToCategory = () => navigate("/category/1");
+
   return (
     <section className="container mt-8">
       <h2 className="text-2xl md:text-4xl font-bold text-center">محصولات</h2>
@@ -27,7 +33,11 @@ const Showcase = () => {
       </div>
 
       <div className="flex justify-center mt-8 md:mt-12">
-        <Button variant="outline" className="bg-transparent rounded-none">
+        <Button
+          onClick={navigateToCategory}
+          variant="outline"
+          className="bg-transparent rounded-none"
+        >
           رفتن به خرید
         </Button>
       </div>

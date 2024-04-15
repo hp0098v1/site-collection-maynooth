@@ -1,4 +1,5 @@
 import { CATEGORIES } from "@/constants";
+import { useNavigate } from "react-router-dom";
 
 const Categories = () => {
   return (
@@ -20,6 +21,10 @@ type CategoryProps = {
 };
 
 const Category = ({ title, imageUrl }: CategoryProps) => {
+  const navigate = useNavigate();
+
+  const navigateToCategory = () => navigate("/category/1");
+
   return (
     <div
       className={`relative min-h-[300px] flex justify-center items-center w-full h-full`}
@@ -30,7 +35,10 @@ const Category = ({ title, imageUrl }: CategoryProps) => {
         src={imageUrl}
         alt="BG"
       />
-      <div className="flex justify-center items-center w-[160px] h-[100px] bg-white/60">
+      <div
+        onClick={navigateToCategory}
+        className="flex justify-center items-center w-[160px] h-[100px] bg-white/60"
+      >
         {title}
       </div>
     </div>

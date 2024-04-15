@@ -48,7 +48,7 @@ const RelatedProductsSlider = () => {
           <SwiperSlide key={`related-product-${product.id}`}>
             <ProductCard
               key={`most-popular-products-${product.id}`}
-              imageContainerClassName="h-[140px] lg:h-[200px] xl:h-[240px] bg-[#ddd]"
+              imageContainerClassName="h-[140px] lg:h-[200px] xl:h-[240px] bg-[#ededed]"
               title={product.title}
               price={product.price}
               imageUrl={product.imageUrl}

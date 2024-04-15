@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
 const Inspirations = () => {
@@ -63,6 +64,10 @@ const Inspiration = ({
   imageAlt,
   isReverse = false,
 }: InspirationProps) => {
+  const navigate = useNavigate();
+
+  const navigateToCategory = () => navigate("/category/1");
+
   return (
     <div
       className={`flex flex-col-reverse ${
@@ -74,7 +79,11 @@ const Inspiration = ({
         <p className="mt-4 text-base italic leading-6 text-center text-zinc-600 max-w-md">
           {description}
         </p>
-        <Button variant="outline" className="bg-transparent rounded-none mt-6">
+        <Button
+          onClick={navigateToCategory}
+          variant="outline"
+          className="bg-transparent rounded-none mt-6"
+        >
           مشاهده محصولات
         </Button>
       </div>

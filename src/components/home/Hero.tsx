@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 
@@ -5,6 +6,8 @@ import { Button } from "@/components/ui/button";
 import { HERO_SOCIAL_ICONS } from "@/constants";
 
 const Hero = () => {
+  const navigate = useNavigate();
+
   const pagination = {
     clickable: true,
     renderBullet: function (index: number, className: string) {
@@ -17,6 +20,8 @@ const Hero = () => {
       );
     },
   };
+
+  const navigateToCategory = () => navigate("/category/1");
 
   return (
     <section className="bg-hero-background w-[95%] rounded-tl-2xl mt-4">
@@ -31,6 +36,7 @@ const Hero = () => {
             </h2>
           </div>
           <Button
+            onClick={navigateToCategory}
             variant="outline"
             className="rounded-none uppercase mt-6 mb-6 sm:mt-8 sm:mb-10 font-bold"
           >

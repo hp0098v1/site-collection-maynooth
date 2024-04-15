@@ -1,17 +1,23 @@
 import { useRef } from "react";
 
+import { useNavigate } from "react-router-dom";
 import { Pagination, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import { Button } from "@/components/ui/button";
 
 const SummerSale = () => {
+  const navigate = useNavigate();
+
+  const navigateToCategory = () => navigate("/category/1");
+
   return (
     <section className="container px-0">
       <div className="grid grid-cols-1 sm:grid-cols-2 justify-center items-center w-full sm:w-[90%] ">
         <div className="flex flex-col gap-4 justify-center items-center w-full min-h-[300px]  h-full bg-[url('/assets/images/home/summer-sale/summer-sale-bg.png')] bg-no-repeat bg-center">
           <h2 className="self-center text-3xl font-medium ">فروش تابستانه</h2>
           <Button
+            onClick={navigateToCategory}
             variant="ghost"
             className="text-primary border-b border-primary hover:border-primary! hover:text-primary!"
           >

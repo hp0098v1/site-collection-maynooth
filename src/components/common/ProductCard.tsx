@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 type Props = {
   imageContainerClassName?: string;
   imageUrl: string;
@@ -16,7 +18,7 @@ const ProductCard = ({
   hasAction = false,
 }: Props) => {
   return (
-    <div>
+    <Link className="block" to={"/products/1"}>
       <div
         className={`group relative h-[230px] lg:h-[400px] bg-border ${imageContainerClassName}`}
       >
@@ -42,7 +44,7 @@ const ProductCard = ({
 
       <h3 className="text-sm sm:text-base text-center mt-4">{title}</h3>
       <p className="font-bold sm:text-lg text-center"> {price}</p>
-    </div>
+    </Link>
   );
 };
 
