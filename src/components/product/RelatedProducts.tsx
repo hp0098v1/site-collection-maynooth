@@ -1,15 +1,17 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
 import { useRef } from "react";
-import ProductCard from "@/components/common/ProductCard";
-import { MOST_POPULAR_PRODUCTS } from "@/constants";
 
-const MostPopular = () => {
+import { Navigation, Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import ProductCard from "@/components/common/ProductCard";
+import { RELATED_PRODUCTS } from "@/constants";
+
+const RelatedProducts = () => {
   return (
-    <div className="container mt-12">
+    <section className="container my-12">
       <div className="mb-12">
         <h2 className="text-2xl md:text-4xl font-bold text-center">
-          محبوب ترین محصولات
+          محصولات مرتبط
         </h2>
         <p className="text-xs md:text-sm text-center line-clamp-2 w-[200px] mx-auto mt-2">
           لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم لورم ایپسوم متن ساختگی
@@ -17,12 +19,12 @@ const MostPopular = () => {
         </p>
       </div>
 
-      <MostPopularSlider />
-    </div>
+      <RelatedProductsSlider />
+    </section>
   );
 };
 
-const MostPopularSlider = () => {
+const RelatedProductsSlider = () => {
   const prevRef = useRef(null);
   const nextRef = useRef(null);
 
@@ -42,11 +44,11 @@ const MostPopularSlider = () => {
         }}
         modules={[Pagination, Navigation]}
       >
-        {MOST_POPULAR_PRODUCTS.map((product) => (
-          <SwiperSlide key={`most-popular-product-${product.id}`}>
+        {RELATED_PRODUCTS.map((product) => (
+          <SwiperSlide key={`related-product-${product.id}`}>
             <ProductCard
               key={`most-popular-products-${product.id}`}
-              imageContainerClassName="h-[185px] md:h-[220px] lg:h-[280px] xl:h-[340px]"
+              imageContainerClassName="h-[140px] lg:h-[200px] xl:h-[240px] bg-[#ddd]"
               title={product.title}
               price={product.price}
               imageUrl={product.imageUrl}
@@ -67,4 +69,4 @@ const MostPopularSlider = () => {
   );
 };
 
-export default MostPopular;
+export default RelatedProducts;

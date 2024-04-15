@@ -239,4 +239,55 @@ export const CATEGORIES = [
   },
 ];
 
+export const RELATED_PRODUCTS = [
+  {
+    id: 1,
+    title: "محصول 1",
+    imageUrl: "/assets/images/product/related-1.png",
+    price: 200,
+  },
+  {
+    id: 2,
+    title: "محصول 2",
+    imageUrl: "/assets/images/product/related-2.png",
+    price: 250,
+  },
+  {
+    id: 3,
+    title: "محصول 3",
+    imageUrl: "/assets/images/product/related-3.png",
+    price: 300,
+  },
+  {
+    id: 4,
+    title: "محصول 4",
+    imageUrl: "/assets/images/product/related-4.png",
+    price: 400,
+  },
+  {
+    id: 5,
+    title: "محصول 5",
+    imageUrl: "/assets/images/product/related-1.png",
+    price: 200,
+  },
+  {
+    id: 6,
+    title: "محصول 6",
+    imageUrl: "/assets/images/product/related-2.png",
+    price: 250,
+  },
+  {
+    id: 7,
+    title: "محصول 7",
+    imageUrl: "/assets/images/product/related-3.png",
+    price: 300,
+  },
+  {
+    id: 8,
+    title: "محصول 8",
+    imageUrl: "/assets/images/product/related-4.png",
+    price: 400,
+  },
+];
+
 export type Product = (typeof CATEGORY_PRODUCTS)[0];

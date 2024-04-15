@@ -46,8 +46,8 @@ const Color = ({ color, isSelected, onClick }: ColorProps) => {
   return (
     <div
       onClick={() => onClick(color)}
-      className={`box-content w-4 h-4 rounded-full cursor-pointer border-white ${
-        isSelected ? "border-2" : ""
+      className={`box-content w-4 h-4 rounded-full cursor-pointer ${
+        isSelected ? "border-4 border-[#ddd]" : ""
       }`}
       style={{
         backgroundColor: color,
